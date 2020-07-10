@@ -52,7 +52,14 @@ button.onclick = function handleClickEvent(e) { //when you click the calculate b
     var userWeight = document.getElementById("user-weight").value; //assigns the user input value to userWeight
     var planetName = document.getElementById("planets").value; //assigns the user's chosen planet to planetName
     result = calculateWeight(userWeight, planetName); //calculates the new user weight on planet and assigns to result
+    
     var message = "If you were on " + planetName + ", you would weigh " + result + "lbs!"; //stores the display message to variable message
+
+    // if(planetName == "Sun" || "Moon") {
+    //     message = "If you were on the " + planetName + ", you would weigh " + result + "lbs!"; //stores the display message to variable message
+    // }
+
+
     document.getElementById("output").innerHTML = message; //finds the element with id "output" in html page and displays message within that element
     console.log(result); //just displays result in console for some feedback to developer
 }
